@@ -10,12 +10,14 @@ import HostelMain from './dashboard/hostel/HostelMain';
 import ComplaintMain from './dashboard/complaint/ComplaintMain';
 import ReservationMain from './dashboard/reservation/ReservationMain';
 import Profile from './dashboard/app/Profile';
+import Prediction from './prediction/Prediction';
 
 function App() {
 
   return (
     <Routes>
-      <Route exact path="/" element={<Login/>} />
+      <Route exact path="/" element={<Prediction/>} />
+      <Route exact path="prediction" element={<Prediction/>} />
       <Route exact path="signup" element={<Signup/>} />
       <Route exact path="login" element={<Login/>} />
       <Route element={<ProtectedRoutes/>}>
